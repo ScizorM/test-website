@@ -1,0 +1,195 @@
+<style>
+
+    @font-face {
+        font-family: 'UnsteadyOversteer'; /* Assign a name to your font */
+        src: url('fonts/Unsteady Oversteer.otf') format('opentype'); /* Specify the path and format */
+        font-weight: normal; /* Define font weight if needed */
+        font-style: normal; /* Define font style if needed */
+    }
+    @font-face {
+        font-family: 'Oxanium-Regular'; /* Assign a name to your font */
+        src: url('fonts/Oxanium-Regular.ttf') format('opentype'); /* Specify the path and format */
+        font-weight: normal; /* Define font weight if needed */
+        font-style: normal; /* Define font style if needed */
+    }
+
+    .glitch{
+        animation-name:glitch;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        font-family:UnsteadyOversteer;
+        
+    }
+
+    .separator{
+        
+    }
+
+    .header{
+        background-image:linear-gradient(to top, rgba(62, 54, 87, 0.5), rgba(105, 123, 188, 0.5));
+        background-blend-mode: darken;
+        font-size: xx-large;
+        font-size-adjust: 1;
+        a{
+            font-style: normal;
+            color:#ffc72c;
+            text-decoration: none;
+        }
+        a:hover{
+            font-style: normal;
+            color:#ffffff;
+            text-decoration: none;
+        }
+        background-size:100%,20px;
+    }
+
+    .navbar{
+        animation-name:slideIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+
+    }
+
+    .paragraph{
+        background-blend-mode: darken;
+        outline: 2px solid rgb(82, 82, 109);
+        margin: 5% auto;
+        margin-left:20%;
+        margin-right:20%;
+        padding-top:1%;
+        padding-bottom: 3%;
+
+        h3{
+            margin-left:0;
+            margin-right:0;
+            width:100%;
+            background-position: center;
+            background-size: 100% 60%;
+            background-repeat:no-repeat;
+            background-image:linear-gradient(to right, rgba(255, 255, 255, 0), #282f7d, rgb(107, 74, 154), #282f7d, rgba(1,1,1,0));
+            background-blend-mode: darken;
+        }
+    }
+
+
+
+/*
+
+Colors to use:
+#ffc72c (yellow)
+#282f7d (dark blue)
+
+*/
+
+div{
+    padding-top:1%;
+    padding-bottom:1%;
+
+
+        
+
+}
+
+
+body{
+    margin:0;
+}
+html{
+        animation-name:bgMove;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background-image:url(images/hexagon3.png);
+        overflow-x: hidden;
+        background-color: rgb(20, 19, 24);
+        background-repeat:repeat-y;
+        background-size:cover;
+        background-position: center 0;
+        background-attachment:scroll;
+        height:100vh;
+
+        color:ffFFFF;
+
+        text-align: center;
+        margin:0;
+        margin-left:0;
+        margin-right:0;
+        font-family:Oxanium-Regular;
+}
+
+h1{
+    font-size:xx-large;
+    margin-bottom:0;
+}
+
+h3{
+    color: #ffc72c;
+}
+
+h4{
+    margin-top:0;
+    font-family:UnsteadyOversteer;
+    font-size:medium
+}
+
+@keyframes hexaShine{
+    from{
+        color:aliceblue;
+    }
+    to{
+
+    }
+}
+
+@keyframes glitch {
+    0% {transform:skew(50deg,0deg) scaleX(2); color:#FFFF;}
+    100% {transform:skew(0deg,0deg); color:#ffc72c}
+}
+
+@keyframes slideIn{
+    from{
+        color:00000;
+    }
+    to{
+        color:#ffc72c;
+        transform:scaleY(1);
+    }
+}
+
+@keyframes bgMove{
+
+}
+
+</style>
+
+<head>
+<div class = "header">
+
+<h1 class = "glitch">[CYBERBUCS]</h1>
+
+<h4>@ETSU</h4>
+
+<p class = "navbar" style = "font-size:medium; font-family: UnsteadyOversteer;"><a href="">HOME</a> | <a href="">GITHUB</a> | <a href="">OFFICERS</a> | <a href="">CONTACT</a> | <a href="">PARTNERSHIPS</a></p>
+
+</div>
+
+</head>
+
+<body>
+
+<div class = "paragraph">
+
+    <h3>Welcome to the CyberBucs website!</h3>
+    On this site,
+</div>
+
+
+
+
+</body>
+
+
+
+
+
+
