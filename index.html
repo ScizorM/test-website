@@ -1,5 +1,7 @@
 <style>
 
+    
+
     @font-face {
         font-family: 'UnsteadyOversteer'; /* Assign a name to your font */
         src: url('fonts/Unsteady Oversteer.otf') format('opentype'); /* Specify the path and format */
@@ -12,7 +14,12 @@
         font-weight: normal; /* Define font weight if needed */
         font-style: normal; /* Define font style if needed */
     }
-
+    @font-face {
+        font-family: 'Zeroes One'; /* Assign a name to your font */
+        src: url('fonts/Zeroes One.otf') format('opentype'); /* Specify the path and format */
+        font-weight: lighter; /* Define font weight if needed */
+        font-style: normal; /* Define font style if needed */
+    }
     .glitch{
         animation-name:glitch;
         animation-duration: 1s;
@@ -42,6 +49,14 @@
         }
         background-size:100%,20px;
     }
+    
+    #notMobile{
+
+    }
+
+    #mobile{
+
+    }
 
     .navbar{
         animation-name:slideIn;
@@ -60,6 +75,7 @@
         padding-bottom: 3%;
 
         h3{
+
             margin-left:0;
             margin-right:0;
             width:100%;
@@ -85,7 +101,6 @@ div{
     padding-top:1%;
     padding-bottom:1%;
 
-
         
 
 }
@@ -93,21 +108,16 @@ div{
 
 body{
     margin:0;
+    
+    overflow-x: hidden;
 }
 html{
-        animation-name:bgMove;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
         background-image:url(images/hexagon3.png);
-        overflow-x: hidden;
         background-color: rgb(20, 19, 24);
         background-repeat:repeat-y;
         background-size:cover;
-        background-position: center 0;
+        background-position: center center;
         background-attachment:scroll;
-        height:100vh;
-
         color:ffFFFF;
 
         text-align: center;
@@ -118,7 +128,7 @@ html{
 }
 
 h1{
-    font-size:xx-large;
+    font-size:50%;
     margin-bottom:0;
 }
 
@@ -127,9 +137,10 @@ h3{
 }
 
 h4{
+    font-weight:1;
+    font-size:40%;
     margin-top:0;
-    font-family:UnsteadyOversteer;
-    font-size:medium
+    font-family:Zeroes One;
 }
 
 @keyframes hexaShine{
@@ -142,8 +153,9 @@ h4{
 }
 
 @keyframes glitch {
-    0% {transform:skew(50deg,0deg) scaleX(2); color:#FFFF;}
-    100% {transform:skew(0deg,0deg); color:#ffc72c}
+    
+    0% {color:#FFFF; overflow-x:hidden;}
+    100% {color:#ffc72c; overflow-x:hidden;}
 }
 
 @keyframes slideIn{
@@ -158,12 +170,11 @@ h4{
 
 
 
-@keyframes bgMove{
 
-}
 
 </style>
 
+<html>
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -173,7 +184,7 @@ h4{
 
 <h4>@ETSU</h4>
 
-<p class = "navbar" style = "font-size:medium; font-family: UnsteadyOversteer;"><a href="">HOME</a> | <a href="">GITHUB</a> | <a href="">OFFICERS</a> | <a href="">CONTACT</a> | <a href="">PARTNERSHIPS</a></p>
+<p id = "notMobile" class = "navbar" style = "font-size:medium; font-family: UnsteadyOversteer;"><a href="">HOME</a> | <a href="">GITHUB</a> | <a href="">OFFICERS</a> | <a href="">CONTACT</a> | <a href="">PARTNERSHIPS</a></p>
 
 </div>
 
@@ -193,7 +204,35 @@ h4{
 </body>
 
 
+</html>
 
 
 
 
+
+
+<script>
+
+    window.addEventListener('resize', ResizeWindow);
+
+
+    function ResizeWindow(){
+    var what = false;
+    var x = document.getElementById("notMobile");
+
+    if(window.matchMedia("(max-width: 767px)").matches){
+        console.log("website is in mobile")
+        what = true;
+        x.style.display = "none"
+    }
+    else{
+        console.log("not")
+        what = false;
+        x.style.display = "block"
+    }
+    }
+
+
+
+
+</script>
