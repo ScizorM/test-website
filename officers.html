@@ -1,0 +1,196 @@
+<link rel="stylesheet" href="stylesheet.css">
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="header">
+
+        <a href="index.html">
+
+            <h1 class="glitch">[CYBERBUCS]</h1>
+
+        </a>
+
+
+        <h4></h4>
+
+        <p id="notMobile" class="navbar" style="font-size:medium; font-family: UnsteadyOversteer;"><a
+                href="index.html">HOME</a> |
+            <a href="https://github.com/ETSU-cybersec">GITHUB</a> | <a href="officers.html">OFFICERS</a> | <a
+                href="contact.html">CONTACT</a> | <a href="partnerships.html">PARTNERSHIPS</a>
+        </p>
+
+        <div class="divider"></div>
+
+
+
+    </div>
+
+    <div id="mobile" class="mobileWindow">
+
+        <a href="javascript:void(0);" class="button" onclick="ToggleMenu()">
+            <img src="images/sandwichIcon.png">
+        </a>
+
+
+
+    </div>
+
+    <div id="mobileNavbar" class="mobileNavbarClass">
+        <div>
+            <a href="index.html">HOME</a>
+        </div>
+        <div>
+            <a href="https://github.com/ETSU-cybersec">GITHUB</a>
+        </div>
+        <div>
+            <a href="officers.html">OFFICERS</a>
+        </div>
+        <div>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div>
+            <a href="partnerships.html">PARTNERSHIPS</a>
+        </div>
+
+    </div>
+</head>
+
+<body>
+
+    <div class="paragraph">
+
+        <h3>Officers
+            <div class="divider"></div>
+        </h3>
+
+        <div>
+            <h4>
+                President
+                <div class="divider"></div>
+
+            </h4>
+            <h5>Riley Owen</h5>
+            <a href="mailto:owenrm1@etsu.edu?subject=Cybersecurity Club Inquiry">Contact</a>
+        </div>
+        <div class="spacer"></div>
+        <div>
+            <h4>
+                Vice President
+                <div class="divider"></div>
+
+            </h4>
+            <h5>Justin Dubin</h5>
+            <a href="mailto:dubinj@.etsu.edu?subject=Cybersecurity Club Inquiry">Contact</a>
+        </div>
+        <div class="spacer"></div>
+        <div>
+            <h4>
+                Secretary
+                <div class="divider"></div>
+
+            </h4>
+            <h5>Joshua Poteet</h5>
+            <a href="mailto:poteetjd@etsu.edu?subject=Cybersecurity Club Inquiry">Contact</a>
+        </div>
+        <div class="spacer"></div>
+        <div>
+            <h4>
+                Treasurer
+                <div class="divider"></div>
+
+            </h4>
+            <h5>Robert Brown</h5>
+            <a href="mailto:BrownR3@etsu.edu?subject=Cybersecurity Club Inquiry">Contact</a>
+        </div>
+        <div class="spacer"></div>
+        <div>
+            <h4>
+                Media and Communication
+                <div class="divider"></div>
+
+            </h4>
+            <h5>Tobias Porter</h5>
+            <a href="mailto:portertc@etsu.edu?subject=Cybersecurity Club Inquiry">Contact</a>
+        </div>
+    </div>
+
+    <div class="paragraph">
+
+        <h3>Faculty Advisors
+            <div class="divider"></div>
+        </h3>
+
+        <div>
+            <h5>Biju Bajracharya</h5>
+            <a href="mailto:bajracharya@etsu.edu?subject=Learn More About the Cybersecurity Club">Contact</a>
+        </div>
+        <div class="divider"></div>
+        <div>
+
+
+
+            <h5>Chandler Scott</h5>
+            <a href="mailto:scottcd1@etsu.edu?subject=Learn More About the Cybersecurity Club">Contact</a>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+<script>
+
+    CheckMenu();
+    ResizeWindow();
+
+    window.addEventListener('resize', ResizeWindow);
+
+    var menuOpened = false;
+
+    function ResizeWindow() {
+        var what = false;
+        var x = document.getElementById("notMobile");
+        var y = document.getElementById("mobile");
+
+        if (window.matchMedia("(max-width: 950px)").matches) {
+            console.log("website is in mobile")
+            what = true;
+            x.style.display = "none"
+            y.style.display = "block"
+        }
+        else {
+            console.log("not")
+            what = false;
+            menuOpened = false;
+            CheckMenu();
+            x.style.display = "block"
+            y.style.display = "none"
+        }
+    }
+
+
+    function ToggleMenu() {
+        menuOpened = !menuOpened;
+
+        CheckMenu()
+    }
+
+    function CheckMenu() {
+        var mobileNavbar = document.getElementById("mobileNavbar");
+
+        if (menuOpened) {
+            mobileNavbar.style.display = "block"
+        }
+        else {
+            mobileNavbar.style.display = "none"
+        }
+    }
+
+</script>
+
+
+</html>

@@ -1,207 +1,87 @@
-<style>
-
-    
-
-    @font-face {
-        font-family: 'UnsteadyOversteer'; /* Assign a name to your font */
-        src: url('fonts/Unsteady Oversteer.otf') format('opentype'); /* Specify the path and format */
-        font-weight: normal; /* Define font weight if needed */
-        font-style: normal; /* Define font style if needed */
-    }
-    @font-face {
-        font-family: 'Oxanium-Regular'; /* Assign a name to your font */
-        src: url('fonts/Oxanium-Regular.ttf') format('opentype'); /* Specify the path and format */
-        font-weight: normal; /* Define font weight if needed */
-        font-style: normal; /* Define font style if needed */
-    }
-    @font-face {
-        font-family: 'Zeroes One'; /* Assign a name to your font */
-        src: url('fonts/Zeroes One.otf') format('opentype'); /* Specify the path and format */
-        font-weight: lighter; /* Define font weight if needed */
-        font-style: normal; /* Define font style if needed */
-    }
-    .glitch{
-        animation-name:glitch;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        font-family:UnsteadyOversteer;
-        
-    }
-
-    .separator{
-        
-    }
-
-    .header{
-        background-image:linear-gradient(to top, rgba(62, 54, 87, 0.5), rgba(105, 123, 188, 0.5));
-        background-blend-mode: darken;
-        font-size: xx-large;
-        font-size-adjust: 1;
-        a{
-            font-style: normal;
-            color:#ffc72c;
-            text-decoration: none;
-        }
-        a:hover{
-            font-style: normal;
-            color:#ffffff;
-            text-decoration: none;
-        }
-        background-size:100%,20px;
-    }
-    
-    #notMobile{
-
-    }
-
-    #mobile{
-
-    }
-
-    .navbar{
-        animation-name:slideIn;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-
-    }
-
-    .paragraph{
-        background-blend-mode: darken;
-        outline: 2px solid rgb(82, 82, 109);
-        margin: 5% auto;
-        margin-left:20%;
-        margin-right:20%;
-        padding-top:1%;
-        padding-bottom: 3%;
-
-        h3{
-
-            margin-left:0;
-            margin-right:0;
-            width:100%;
-            background-position: center;
-            background-size: 100% 60%;
-            background-repeat:no-repeat;
-            background-image:linear-gradient(to right, rgba(255, 255, 255, 0), #282f7d, rgb(107, 74, 154), #282f7d, rgba(1,1,1,0));
-            background-blend-mode: darken;
-        }
-    }
-
-
-
-/*
-
-Colors to use:
-#ffc72c (yellow)
-#282f7d (dark blue)
-
-*/
-
-div{
-    padding-top:1%;
-    padding-bottom:1%;
-
-        
-
-}
-
-
-body{
-    margin:0;
-    
-    overflow-x: hidden;
-}
-html{
-        background-image:url(images/hexagon3.png);
-        background-color: rgb(20, 19, 24);
-        background-repeat:repeat-y;
-        background-size:cover;
-        background-position: center center;
-        background-attachment:scroll;
-        color:ffFFFF;
-
-        text-align: center;
-        margin:0;
-        margin-left:0;
-        margin-right:0;
-        font-family:Oxanium-Regular;
-}
-
-h1{
-    font-size:50%;
-    margin-bottom:0;
-}
-
-h3{
-    color: #ffc72c;
-}
-
-h4{
-    font-weight:1;
-    font-size:40%;
-    margin-top:0;
-    font-family:Zeroes One;
-}
-
-@keyframes hexaShine{
-    from{
-        color:aliceblue;
-    }
-    to{
-
-    }
-}
-
-@keyframes glitch {
-    
-    0% {color:#FFFF; overflow-x:hidden;}
-    100% {color:#ffc72c; overflow-x:hidden;}
-}
-
-@keyframes slideIn{
-    from{
-        color:00000;
-    }
-    to{
-        color:#ffc72c;
-        transform:scaleY(1);
-    }
-}
-
-
-
-
-
-</style>
-
+<link rel="stylesheet" href="stylesheet.css">
 <html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div class = "header">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="header">
 
-<h1 class = "glitch">[CYBERBUCS]</h1>
+        <a href="index.html">
 
-<h4>@ETSU</h4>
+            <h1 class="glitch">[CYBERBUCS]</h1>
 
-<p id = "notMobile" class = "navbar" style = "font-size:medium; font-family: UnsteadyOversteer;"><a href="">HOME</a> | <a href="">GITHUB</a> | <a href="">OFFICERS</a> | <a href="">CONTACT</a> | <a href="">PARTNERSHIPS</a></p>
+        </a>
 
-</div>
 
+        <h4></h4>
+
+        <p id="notMobile" class="navbar" style="font-size:medium; font-family: UnsteadyOversteer;"><a
+                href="index.html">HOME</a> |
+            <a href="https://github.com/ETSU-cybersec">GITHUB</a> | <a href="officers.html">OFFICERS</a> | <a
+                href="contact.html">CONTACT</a> | <a href="partnerships.html">PARTNERSHIPS</a>
+        </p>
+
+        <div class="divider"></div>
+
+
+
+    </div>
+
+    <div id="mobile" class="mobileWindow">
+
+        <a href="javascript:void(0);" class="button" onclick="ToggleMenu()">
+            <img src="images/sandwichIcon.png">
+        </a>
+
+
+
+    </div>
+
+    <div id="mobileNavbar" class="mobileNavbarClass">
+        <div>
+            <a href="index.html">HOME</a>
+        </div>
+        <div>
+            <a href="https://github.com/ETSU-cybersec">GITHUB</a>
+        </div>
+        <div>
+            <a href="officers.html">OFFICERS</a>
+        </div>
+        <div>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div>
+            <a href="partnerships.html">PARTNERSHIPS</a>
+        </div>
+
+    </div>
 </head>
 
 <body>
 
-<div class = "paragraph">
+    <div class="paragraph">
 
-    <h3>Welcome to the CyberBucs website!</h3>
-    On this site,
-</div>
+        <h3>Welcome to the CyberBucs website!
+            <div class="divider"></div>
+        </h3>
 
+        On this site, we store information about our club, how to get in touch, and much more!
+        
+        <div class="divider"></div>
+        <div class="spacer"></div>
 
+        Meeting times:
+        <div></div>
+        Thursdays 6:30PM-8:30PM
+        <div></div>
+        @Brinkley Center, Room 225
+        <div></div>
+        <div class="divider"></div>
+        Questions? Feel free to visit our
+        <a href="contact.html">Contact Page</a>
+        or join our
+        <a href="https://discord.gg/utBqwtkeQf">Discord Server</a>.
+    </div>
 
-
-</body>
 
 
 </html>
@@ -213,29 +93,50 @@ h4{
 
 <script>
 
+    CheckMenu();
     ResizeWindow();
 
     window.addEventListener('resize', ResizeWindow);
 
+    var menuOpened = false;
 
+    function ResizeWindow() {
+        var what = false;
+        var x = document.getElementById("notMobile");
+        var y = document.getElementById("mobile");
 
-    function ResizeWindow(){
-    var what = false;
-    var x = document.getElementById("notMobile");
-
-    if(window.matchMedia("(max-width: 767px)").matches){
-        console.log("website is in mobile")
-        what = true;
-        x.style.display = "none"
+        if (window.matchMedia("(max-width: 950px)").matches) {
+            console.log("website is in mobile")
+            what = true;
+            x.style.display = "none"
+            y.style.display = "block"
+        }
+        else {
+            console.log("not")
+            what = false;
+            menuOpened = false;
+            CheckMenu();
+            x.style.display = "block"
+            y.style.display = "none"
+        }
     }
-    else{
-        console.log("not")
-        what = false;
-        x.style.display = "block"
+
+
+    function ToggleMenu() {
+        menuOpened = !menuOpened;
+
+        CheckMenu()
     }
+
+    function CheckMenu() {
+        var mobileNavbar = document.getElementById("mobileNavbar");
+
+        if (menuOpened) {
+            mobileNavbar.style.display = "block"
+        }
+        else {
+            mobileNavbar.style.display = "none"
+        }
     }
-
-
-
 
 </script>

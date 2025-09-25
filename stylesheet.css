@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'UnsteadyOversteer';
+    /* Assign a name to your font */
+    src: url('fonts/Unsteady Oversteer.otf') format('opentype');
+    /* Specify the path and format */
+    font-weight: normal;
+    /* Define font weight if needed */
+    font-style: normal;
+    /* Define font style if needed */
+}
+
+@font-face {
+    font-family: 'Oxanium-Regular';
+    /* Assign a name to your font */
+    src: url('fonts/Oxanium-Regular.ttf') format('opentype');
+    /* Specify the path and format */
+    font-weight: normal;
+    /* Define font weight if needed */
+    font-style: normal;
+    /* Define font style if needed */
+}
+
+@font-face {
+    font-family: 'Zeroes One';
+    /* Assign a name to your font */
+    src: url('fonts/Zeroes One.otf') format('opentype');
+    /* Specify the path and format */
+    font-weight: lighter;
+    /* Define font weight if needed */
+    font-style: normal;
+    /* Define font style if needed */
+}
+
+.glitch {
+    animation-name: glitch;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-family: UnsteadyOversteer;
+
+}
+
+.divider {
+    mix-blend-mode: lighten;
+    margin: 5px;
+    padding: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(39, 42, 59, 0.5), rgb(226, 220, 234), rgba(36, 37, 45, 0.5), rgba(1, 1, 1, 0));
+}
+
+.spacer{
+    padding:10px;
+}
+
+.header {
+    background-image: linear-gradient(to top, rgba(62, 54, 87, 0.5), rgba(105, 123, 188, 0.5));
+    background-blend-mode: darken;
+    font-size: xx-large;
+    font-size-adjust: 1;
+
+    a {
+        font-style: normal;
+        color: #ffc72c;
+        text-decoration: none;
+    }
+
+    a:hover {
+        font-style: normal;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    background-size:100%,
+    20px;
+}
+
+
+
+.mobileWindow {
+    background-color: rgba(40, 37, 61, 0.5);
+
+    img {
+        text-align: left;
+        width: 70px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    img:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+}
+
+.navbar {
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.paragraph {
+    background-blend-mode: darken;
+    outline: 2px solid rgb(82, 82, 109);
+    margin: 5% auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 0;
+    padding-bottom: 3%;
+    font-family:Oxanium-Regular;
+    h3 {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 15px;
+        padding: 5px;
+        font-size:xx-large;
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to top, rgba(62, 54, 87, 0.5), rgba(64, 75, 114, 0.5));
+        background-blend-mode: darken;
+    }
+    h4 {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+        padding: 5px;
+        font-size:xx-large;
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        font-family:Oxanium-Regular;
+        background-blend-mode: darken;
+    }
+    h5{
+        margin-top:0;
+        margin-bottom:0;
+        font-weight: 1;
+        font-size:larger;
+    }
+    a{
+        
+        text-decoration: none;
+        color:#ffc72c;
+    }
+    a:hover{
+        color:#ffffff;
+    }
+    a:visited{
+        color:#615bff;
+    }
+    a:visited:hover{
+        color:#bbb9ed;
+    }
+}
+
+.mobileNavbarClass {
+    font-size: medium;
+    font-style: normal;
+
+    font-family: UnsteadyOversteer;
+
+    a {
+        background-color: rgba(40, 37, 61, 0.5);
+        display: block;
+        margin: 0;
+        padding: 10px;
+        font-size: larger;
+        color: #ffc72c;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: rgb(44, 42, 59);
+        font-size: larger;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    div {
+
+        width: 100%;
+    }
+}
+
+/*
+
+Colors to use:
+#ffc72c (yellow)
+#282f7d (dark blue)
+
+*/
+
+div {
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+
+
+}
+
+
+body {
+    margin: 0;
+
+    overflow-x: hidden;
+}
+
+html {
+    background-image: url(images/hexagon3.png);
+    background-color: rgb(20, 19, 24);
+    background-size: 100%;
+    background-position: center center;
+    color: ffFFFF;
+    text-align: center;
+    background-repeat: repeat-y;
+    font-weight: 1;
+    font-family: Oxanium-Regular;
+}
+
+h1 {
+    font-size: 50%;
+    margin-bottom: 0;
+
+}
+
+h3 {
+    color: #ffc72c;
+    font-weight: 1;
+}
+
+h4 {
+    font-weight: 1;
+    font-size: 40%;
+    margin-top: 0;
+    font-family: Zeroes One;
+}
+
+@keyframes hexaShine {
+    from {
+        color: aliceblue;
+    }
+
+    to {}
+}
+
+@keyframes glitch {
+
+    0% {
+        color: #FFFF;
+        overflow-x: hidden;
+    }
+
+    100% {
+        color: #ffc72c;
+        overflow-x: hidden;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        color: 00000;
+    }
+
+    to {
+        color: #ffc72c;
+        transform: scaleY(1);
+    }
+}
